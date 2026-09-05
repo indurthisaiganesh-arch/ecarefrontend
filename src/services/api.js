@@ -26,7 +26,7 @@ import axios from 'axios';
 // ─── Axios Instance ──────────────────────────────────────────────────────────
 
 const api = axios.create({
-  baseURL: ${API_URL}+'/api',
+  baseURL: `${import.meta.env.API_URL}/api`,
   headers: { 'Content-Type': 'application/json' },
 });
 
